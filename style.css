@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f0f4f8;
+color: #263238;
+}
+
+header, footer {
+text-align: center;
+padding: 20px;
+}
+
+header {
+background: #263b80;
+color: white;
+}
+
+main {
+max-width: 700px;
+margin: 20px auto;
+padding: 15px;
+display: grid;
+gap: 20px;
+}
+
+section {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 8px #ccc;
+}
+
+h2 {
+color: #263b80;
+margin-bottom: 15px;
+}
+
+.clock-section {
+text-align: center;
+}
+
+.clock {
+font-size: 50px;
+font-weight: bold;
+color: #263b80;
+}
+
+.date {
+margin: 10px;
+}
+
+form, .form-group {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+input, select, button {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button {
+background: #263b80;
+color: white;
+cursor: pointer;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+button:focus-visible, input:focus, select:focus {
+outline: 2px solid #526fe0;
+}
+
+.section-heading, .alarm-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+}
+
+.alarm-list {
+list-style: none;
+display: grid;
+gap: 10px;
+}
+
+.alarm-item {
+padding: 12px;
+background: #f0f4ff;
+border-left: 5px solid #263b80;
+border-radius: 5px;
+}
+
+.ringing {
+background: #ffe0e0;
+border-color: red;
+}
+
+.alarm-time {
+font-size: 20px;
+font-weight: bold;
+}
+
+.alarm-status {
+color: green;
+}
+
+.ringing .alarm-status {
+color: red;
+}
+
+.alarm-actions {
+display: flex;
+gap: 5px;
+}
+
+.delete-btn, .clear-btn {
+background: #dc3545;
+}
+
+.toggle-btn {
+background: #64748b;
+}
+
+.empty-state {
+text-align: center;
+padding: 15px;
+color: gray;
+}
+
+#message.success {
+color: green;
+}
+
+#message.error {
+color: red;
+}
+
+@media (max-width: 500px) {
+.clock {
+font-size: 35px;
+}
+
+```
+.alarm-item {
+    flex-wrap: wrap;
+}
+```
+
+}

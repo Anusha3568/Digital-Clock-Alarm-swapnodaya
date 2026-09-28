@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock & Alarm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Digital Clock & Alarm</h1>
+        <p>Keep track of time and manage your alarms.</p>
+    </header>
+
+    <main>
+        <section class="clock-section">
+            <h2>Current Time</h2>
+            <div id="clock" class="clock">00:00:00</div>
+            <div id="date" class="date"></div>
+
+            <label for="timeFormat">Time Format:</label>
+            <select id="timeFormat">
+                <option value="12">12-Hour</option>
+                <option value="24">24-Hour</option>
+            </select>
+        </section>
+
+        <section class="alarm-section">
+            <h2>Set an Alarm</h2>
+            <form id="alarmForm">
+                <div class="form-group">
+                    <label for="alarmTime">Alarm Time:</label>
+                    <input type="time" id="alarmTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alarmLabel">Alarm Name:</label>
+                    <input type="text" id="alarmLabel"
+                        placeholder="e.g., Morning Wake-up" maxlength="40">
+                </div>
+
+                <button type="submit" class="add-btn">+ Set Alarm</button>
+            </form>
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="alarms-section">
+            <div class="section-heading">
+                <h2>Your Alarms</h2>
+                <button type="button" id="clearAlarms" class="clear-btn">
+                    Clear All
+                </button>
+            </div>
+
+            <ul id="alarmList" class="alarm-list">
+                <li class="empty-state">No alarms set yet.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Digital Clock & Alarm | HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
